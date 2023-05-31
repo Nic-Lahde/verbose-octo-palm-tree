@@ -42,8 +42,15 @@ namespace ShootingDice
             HumanPlayer humanPlayer = new HumanPlayer();
             humanPlayer.Name = "Jimothy";
 
+            CreativeSmackTalkingPlayer creativeSmackTalkingPlayer = new CreativeSmackTalkingPlayer();
+            creativeSmackTalkingPlayer.Name = "Giggles";
+            creativeSmackTalkingPlayer.Taunts = new List<string>();
+            creativeSmackTalkingPlayer.Taunts.Add("You get tired just WATCHING dice.");
+            creativeSmackTalkingPlayer.Taunts.Add("You are to dice what Michael Jordan is to baseball.");
+            creativeSmackTalkingPlayer.Taunts.Add("You six piece chicken McNobody.");
+
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large, smackTalker, humanPlayer, oneHigherPlayer
+                player1, player2, player3, large, smackTalker, humanPlayer, oneHigherPlayer, creativeSmackTalkingPlayer
             };
 
             PlayMany(players);
