@@ -36,8 +36,14 @@ namespace ShootingDice
             smackTalker.Name = "Snarkus";
             smackTalker.Taunt = "Snarkus shouts: My power is unmatched!";
 
+            OneHigherPlayer oneHigherPlayer = new OneHigherPlayer();
+            oneHigherPlayer.Name = "Sneaky Pete";
+
+            HumanPlayer humanPlayer = new HumanPlayer();
+            humanPlayer.Name = "Jimothy";
+
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large, smackTalker
+                player1, player2, player3, large, smackTalker, humanPlayer, oneHigherPlayer
             };
 
             PlayMany(players);
