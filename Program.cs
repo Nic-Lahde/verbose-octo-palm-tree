@@ -49,11 +49,21 @@ namespace ShootingDice
             creativeSmackTalkingPlayer.Taunts.Add("You are to dice what Michael Jordan is to baseball.");
             creativeSmackTalkingPlayer.Taunts.Add("You six piece chicken McNobody.");
 
-            List<Player> players = new List<Player>() {
-                player1, player2, player3, large, smackTalker, humanPlayer, oneHigherPlayer, creativeSmackTalkingPlayer
-            };
+            SoreLoserPlayer soreLoserPlayer = new SoreLoserPlayer();
+            soreLoserPlayer.Name = "Tony";
 
-            PlayMany(players);
+            List<Player> players = new List<Player>() {
+                player1, player2, player3, large, smackTalker, humanPlayer, oneHigherPlayer, creativeSmackTalkingPlayer, soreLoserPlayer
+            };
+            try
+            {
+                PlayMany(players);
+
+            }
+            catch
+            {
+                Console.WriteLine("A sore loser threw the dice as far as they could.");
+            }
         }
 
         static void PlayMany(List<Player> players)
