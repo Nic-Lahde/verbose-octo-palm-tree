@@ -52,8 +52,11 @@ namespace ShootingDice
             SoreLoserPlayer soreLoserPlayer = new SoreLoserPlayer();
             soreLoserPlayer.Name = "Tony";
 
+            UpperHalfPlayer upperHalfPlayer = new UpperHalfPlayer();
+            upperHalfPlayer.Name = "Randal";
+
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large, smackTalker, humanPlayer, oneHigherPlayer, creativeSmackTalkingPlayer, soreLoserPlayer
+                player1, player2, player3, large, smackTalker, humanPlayer, oneHigherPlayer, creativeSmackTalkingPlayer, soreLoserPlayer, upperHalfPlayer
             };
             try
             {
